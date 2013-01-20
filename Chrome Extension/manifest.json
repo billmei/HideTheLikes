@@ -1,0 +1,41 @@
+{
+    "manifest_version" : 2,
+
+    "name" : "Hide Facebook Post Likes (Beta)",
+    "description" : "Hides the number of likes received on Facebook posts so you can stop comparing yourself to everyone else.",
+    "version" : "0.5",
+
+    "icons" : {
+        // "16" : "img/thumb16.png",
+        // "48" : "img/thumb48.png" // These icons need to be created
+        // "128" : "img/thumb128.png"
+    },
+
+    "background" : {
+        "page": "background.html"
+    },
+        
+
+    "content_scripts": [ {
+       "include_globs": [ "*.facebook.*" ],
+       "css": [ "style.css" ],
+       "js": [ "js/main.js" , "js/jquery-1.9.0.min.js" ],
+       "matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*" ],
+       "run_at": "document_start"
+    } ],
+
+    "homepage_url" : "http://www.kortaggio.com", // Change this to the actual homepage
+
+    "permissions" : [
+    "https://*.facebook.com/*",
+    "http://*.facebook.com/*"
+    ],
+
+    "browser_action": {
+        // "default_icon": "img/icon.png", // Need to add this
+        "default_title" : "Hide Facebook Post Likes (Beta)",
+        "default_popup": "popup.html"
+    },
+
+    "update_url": "http://clients2.google.com/service/update2/crx"
+}
