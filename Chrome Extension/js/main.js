@@ -1,9 +1,9 @@
 (function(){
 
-window.setInterval(
-    function() {
-        hideLikes();
-},1000);
+$(document).bind("DOMSubtreeModified",function(){
+    hideLikes();
+    console.log("updated!")
+});
 
 function hideLikes () {
     $(".UFILikeSentence").remove();
@@ -13,7 +13,11 @@ function hideLikes () {
     $(".UFICommentLikeButton").html("");
     $(".UFIBlingBoxLikeIcon").next().html("");
     $(".UFIBlingBoxLikeIcon").remove();
+    $(".UFIBlingBoxReshareIcon")
+    $(".UFIShareLink").parents(".UFIRow").remove();
+
 }
 
 
-})();
+}());
+
