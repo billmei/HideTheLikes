@@ -2,29 +2,23 @@
     "manifest_version" : 2,
 
     "name" : "Hide Facebook Post Likes (Beta)",
-    "description" : "Hides the number of likes received on Facebook posts so you can stop comparing yourself to everyone else.",
+    "description" : "Life is not a popularity contest. Hides the number of likes and shares received on Facebook posts so you can stop comparing yourself to everyone else.",
     "version" : "0.5",
 
     "icons" : {
         "16" : "img/thumb16.png",
         "48" : "img/thumb48.png",
         "128" : "img/thumb128.png"
-    },
-
-    "background" : {
-        "page": "background.html"
-    },
-        
+    },      
 
     "content_scripts": [ {
        "include_globs": [ "*.facebook.*" ],
-       "css": [ "style.css" ],
-       "js": [ "js/main.js" , "js/jquery-1.9.0.min.js" ],
+       "js": [ "js/jquery-1.9.0.min.js", "js/jquery.livequery.js", "js/main.js" ],
        "matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*" ],
        "run_at": "document_start"
     } ],
 
-    "homepage_url" : "http://www.kortaggio.com", // Change this to the actual homepage
+    "homepage_url" : "http://www.kortaggio.com/", 
 
     "permissions" : [
     "https://*.facebook.com/*",
