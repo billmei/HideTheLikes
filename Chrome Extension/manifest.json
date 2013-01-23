@@ -8,7 +8,7 @@
     "icons" : {
         "16" : "img/thumb16.png",
         "48" : "img/thumb48.png",
-        "128" : "img/thumb128.png"
+        "128" : "img/thumb128.png" // Need to create large logo for Chrome Web Store
     },      
 
     "content_scripts": [ {
@@ -18,7 +18,7 @@
        "run_at": "document_start"
     } ],
 
-    "homepage_url" : "http://www.kortaggio.com/", 
+    "homepage_url" : "http://www.kortaggio.com/", // Change this to real website
 
     "permissions" : [
     "https://*.facebook.com/*",
