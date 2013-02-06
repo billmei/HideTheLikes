@@ -1,5 +1,4 @@
 body {
-    max-height: 240px;
     width: 520px;
 }
 
@@ -14,4 +13,17 @@ p {
     font-family: Georgia,serif;
     line-height: 140%;
     padding: 0px 10px;
+}
+
+iframe {
+    width: 246px;
+    height: 30px;
+}
+
+.sharebuttons {
+    display: block;
+    text-align: center;
+    font-family: Helvetica,Arial,sans-serif;
+    color: #1240ab;
+    padding: 8px;
 }
