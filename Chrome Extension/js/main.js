@@ -8,7 +8,7 @@ $(document).ready(function(){
     } else if ($("#pagelet_home_stream").length > 0) {
         hideNewsFeedLikes();
     } else {
-        console.log("does not exist!")
+        hideTimelineLikes();
     }
 
 //Facebook pulls data in via scripts so we need to re-check if the user has navigated to a new page every second.
