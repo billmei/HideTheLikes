@@ -11,11 +11,13 @@ $(document).ready(function(){
         console.log("does not exist!")
     }
 
-// Facebook pulls data in via scripts so we need to re-check if the user has navigated to a new page every second.
+//Facebook pulls data in via scripts so we need to re-check if the user has navigated to a new page every second.
 window.setInterval(function(){
     if ($("#timeline_tab_content").length > 0) {
+        hideTimelineLikes();
         pageListener(hideTimelineLikes,'timeline_tab_content');
     } else if ($("#pagelet_home_stream").length > 0) {
+        hideNewsFeedLikes();
         pageListener(hideNewsFeedLikes,'pagelet_home_stream');
     } else {
         console.log("does not exist!")
@@ -48,8 +50,7 @@ function hideTimelineLikes () {
     $(".fbTimelineFeedbackLikes").remove();
     $(".UFICommentLikeButton").prev().html("");
     $(".UFICommentLikeButton").html("");
-
-    console.log("timeline updated!");
+    // console.log("timeline updated!"); // Use for debugging
     return;
 }
 
@@ -60,10 +61,10 @@ function hideNewsFeedLikes () {
     $(".UFIBlingBoxLikeIcon").parent().remove();
     $(".UFIBlingBoxReshareIcon").parent().remove();
     $(".UFIShareLink").parents(".UFIRow").remove();
-
-    console.log("news feed updated!");
+    // console.log("news feed updated!"); // Use for debugging
     return;
 };
+
 
 }());
 
