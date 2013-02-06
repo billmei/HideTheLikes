@@ -20,7 +20,7 @@ window.setInterval(function(){
         hideNewsFeedLikes();
         pageListener(hideNewsFeedLikes,'pagelet_home_stream');
     } else {
-        console.log("does not exist!")
+        hideTimelineLikes();
     }
 },1000);
 });
@@ -37,7 +37,7 @@ function pageListener (pageToHide, idOfDOMNode) {
         if (window.HideTheLikes_diff.getTime() > delayInterval) {
             pageToHide();
             window.HideTheLikes_lastFunctionRun = new Date();
-            console.log(window.HideTheLikes_diff.getTime());
+            // console.log(window.HideTheLikes_diff.getTime()); // Use for debugging: logs the number of seconds since the last function call
         }
         window.setTimeout(function(){window.HideTheLikes_timeRightNow = new Date();},delayInterval);
                
@@ -46,10 +46,10 @@ function pageListener (pageToHide, idOfDOMNode) {
 
 function hideTimelineLikes () {
     $(".UFILikeSentence").remove();
-    $(".fbTimelineFeedbackShares").remove();
-    $(".fbTimelineFeedbackLikes").remove();
     $(".UFICommentLikeButton").prev().html("");
     $(".UFICommentLikeButton").html("");
+    $(".fbTimelineFeedbackShares").remove();
+    $(".fbTimelineFeedbackLikes").remove();
     // console.log("timeline updated!"); // Use for debugging
     return;
 }
