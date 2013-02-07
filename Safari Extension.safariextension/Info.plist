@@ -78,6 +78,8 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://www.kortaggio.com/hidethelikes/HideTheLikes.plist</string>
 	<key>Website</key>
 	<string>https://github.com/Kortaggio/HideTheLikes</string>
 </dict>
