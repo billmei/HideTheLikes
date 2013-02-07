@@ -65,8 +65,5 @@ function hideNewsFeedLikes () {
     return;
 };
 
-
-// Safari: Convert each link into an onclick event since apparently Safari popovers don't support anchor tags
-
 }());
 
