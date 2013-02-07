@@ -15,6 +15,10 @@ p {
     padding: 0px 10px;
 }
 
+a {
+    color: #1240ab;
+}
+
 .sharebuttons {
     display: block;
     text-align: center;
