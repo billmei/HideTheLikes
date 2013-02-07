@@ -36,6 +36,7 @@
     <a class="sharebuttons" id="tinyletter" href="http://tinyletter.com/Kortaggio" target="_blank">Sign up for monthly lifehacks</a>
     <p>Questions, suggestions, or bug reports? <a href="http://www.kortaggio.com/contact" id="contact" target="_blank">Contact me.</a></p>
     <script type="text/javascript">
+    // Safari: Convert each link into an onclick event since apparently Safari popovers don't support anchor tags
         document.getElementById("github").onclick = function(){safari.application.activeBrowserWindow.openTab().url = "http://github.com/Kortaggio/HideTheLikes"};
         document.getElementById("twitter").onclick = function(){safari.application.activeBrowserWindow.openTab().url = "http://twitter.com/Kortaggio"};
         document.getElementById("tinyletter").onclick = function(){safari.application.activeBrowserWindow.openTab().url = "http://tinyletter.com/Kortaggio"};
