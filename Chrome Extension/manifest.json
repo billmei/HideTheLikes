@@ -3,7 +3,7 @@
 
     "name" : "Hide Facebook Post Likes (Beta)",
     "description" : "Life is not a popularity contest. Hides likes and shares on Facebook posts so you can stop comparing yourself to everyone else.",
-    "version" : "0.6.2",
+    "version" : "0.6.3",
 
     "icons" : {
         "16" : "img/thumb16.png",
@@ -14,6 +14,7 @@
     "content_scripts": [ {
        "include_globs": [ "*.facebook.*" ],
        "js": [ "js/jquery-1.9.0.min.js", "js/main.js" ],
+       "css" : [ "hider.css" ],
        "matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*" ],
        "run_at": "document_start"
     } ],

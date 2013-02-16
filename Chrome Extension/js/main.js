@@ -45,22 +45,16 @@ function pageListener (pageToHide, idOfDOMNode) {
 };
 
 function hideTimelineLikes () {
-    $(".UFILikeSentence").remove();
-    $(".UFICommentLikeButton").prev().html("");
-    $(".UFICommentLikeButton").html("");
-    $(".fbTimelineFeedbackShares").remove();
-    $(".fbTimelineFeedbackLikes").remove();
+    $(".UFICommentLikeButton").prev().addClass("hider");
     // console.log("timeline updated!"); // Use for debugging
     return;
 }
 
 function hideNewsFeedLikes () {
-    $(".UFILikeSentence").remove();
-    $(".UFICommentLikeButton").prev().html("");
-    $(".UFICommentLikeButton").html("");
-    $(".UFIBlingBoxLikeIcon").parent().remove();
-    $(".UFIBlingBoxReshareIcon").parent().remove();
-    $(".UFIShareLink").parents(".UFIRow").remove();
+    $(".UFICommentLikeButton").prev().addClass("hider");
+    $(".UFIBlingBoxLikeIcon").parent().addClass("hider");
+    $(".UFIBlingBoxReshareIcon").parent().addClass("hider");
+    $(".UFIShareLink").parents(".UFIRow").addClass("hider");
     // console.log("news feed updated!"); // Use for debugging
     return;
 };

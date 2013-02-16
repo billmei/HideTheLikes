@@ -1,0 +1,24 @@
+.hider {
+    display: none !important;
+    font-size: 0px !important;
+}
+
+.UFILikeSentence {
+    display: none !important;
+    font-size: 0px !important;
+}
+
+.UFICommentLikeButton {
+    display: none !important;
+    font-size: 0px !important;
+}
+
+.fbTimelineFeedbackShares {
+    display: none !important;
+    font-size: 0px !important;
+}
+
+.fbTimelineFeedbackLikes {
+    display: none !important;
+    font-size: 0px !important;
+}
