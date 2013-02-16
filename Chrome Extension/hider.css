@@ -1,33 +1,13 @@
-.hider {
-    display: none !important;
-    font-size: 0px !important;
-}
-
-.UFILikeSentence {
-    display: none !important;
-    font-size: 0px !important;
-}
-
-.UFICommentLikeButton {
-    display: none !important;
-    font-size: 0px !important;
-}
-
-.fbTimelineFeedbackShares {
-    display: none !important;
-    font-size: 0px !important;
-}
-
-.fbTimelineFeedbackLikes {
-    display: none !important;
-    font-size: 0px !important;
-}
-
-/* Like image on a Page post */
+.hider,
+.UFILikeSentence,
+.UFICommentLikeButton,
+.fbTimelineFeedbackShares,
+.fbTimelineFeedbackLikes,
 .sx_2b72b2 {
     display: none !important;
     font-size: 0px !important;
 }
+/* class "sx_2b72b2" is the like image on a Page post */
 
 /* Prevents the image of a share button from loading */
 img[src*="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif"] {
