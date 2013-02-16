@@ -22,3 +22,14 @@
     display: none !important;
     font-size: 0px !important;
 }
+
+/* Like image on a Page post */
+.sx_2b72b2 {
+    display: none !important;
+    font-size: 0px !important;
+}
+
+/* Prevents the image of a share button from loading */
+img[src*="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif"] {
+    display: none !important;
+}

@@ -46,6 +46,9 @@ function pageListener (pageToHide, idOfDOMNode) {
 
 function hideTimelineLikes () {
     $(".UFICommentLikeButton").prev().addClass("hider");
+    $(".sx_2b72b2").next().addClass("hider");
+    $("img[src*='https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif']").next().addClass("hider");
+    $(".UFIShareIcon").parent().parent().parent().addClass("hider");
     // console.log("timeline updated!"); // Use for debugging
     return;
 }
