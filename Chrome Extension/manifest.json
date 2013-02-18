@@ -14,7 +14,7 @@
     "content_scripts": [ {
        "include_globs": [ "*.facebook.*" ],
        "js": [ "js/jquery-1.9.0.min.js", "js/main.js" ],
-       "css" : [ "hider.css" ],
+       "css" : [ "css/hider.css" ],
        "matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*" ],
        "run_at": "document_start"
     } ],

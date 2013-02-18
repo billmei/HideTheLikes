@@ -1,0 +1,65 @@
+body {
+    width: 520px;
+}
+
+h1 {
+    font-family: Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 1px #333;
+    text-align: left;
+    padding: 0px 10px;
+}
+
+h2 {
+    font-family: Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 1px #333;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.options {
+    font-family: Georgia,serif;
+    text-align: left;
+}
+
+.optionrow {
+    display: block;
+    padding: 5px 10px;
+}
+
+.savedconfirmation {
+    float: right;
+}
+
+.saved {
+    width: 50px;
+    height: 10px;
+    color: #00FF00;
+    background-color: #00FF00;
+}
+
+.checkboxes {
+    vertical-align: middle;
+}
+
+.checkboxlabels {
+    padding: 0px 7px;
+    vertical-align: middle;
+}
+
+p {
+    font-family: Georgia,serif;
+    line-height: 140%;
+    padding: 0px 10px;
+}
+
+a {
+    color: #1240ab;
+}
+
+.sharebuttons {
+    display: block;
+    text-align: center;
+    font-family: Helvetica,Arial,sans-serif;
+    color: #1240ab;
+    padding: 8px;
+}

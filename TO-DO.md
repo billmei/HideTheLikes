@@ -3,6 +3,7 @@ Last updated Feb 17, 2013
 [ ] Make hiding notifications an option for the user
 [ ] Filter the toast notifications to stop hiding non-like notifications
 [ ] Port the extension over to Firefox
+[ ] Avoid duplicate loading of the jQuery library somehow (1st time in manifest, 2nd time in popup.html)
 
 Completed 
 

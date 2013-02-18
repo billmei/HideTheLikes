@@ -1,15 +1,21 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
 </head>
 <body>
-    <h1>Thanks for using this extension!</h1>
-    <p>Facebook is not a popularity contest. When you share something, share it because you care about your friends, and not because you just want to have the most number of likes on your post. Hiding the likes and shares on posts, comments, and news feed items lets you have a meaningful conversation instead.</p>
+    <h1>Options</h1>
+    <form class="options">
+        <span class="optionrow" ><input class="checkboxes" type="checkbox" name="traySetting" value="" checked="checked" id="traySetting"><label class="checkboxlabels" for="traySetting">Hide notifications for likes</label></span><span class="savedconfirmation"></span>
+        <span class="optionrow" ><input class="checkboxes" type="checkbox" name="toastSetting" value="" checked="checked" id="toastSetting"><label class="checkboxlabels" for="toastSetting">Hide popup notifications</label></span><span class="savedconfirmation"></span>
+    </form>
+    <h2>Enjoyed this extension?</h2>
     <a class="sharebuttons" href="http://github.com/Kortaggio/HideTheLikes" target="_blank">Fork me on Github</a>
     <a class="sharebuttons" href="http://twitter.com/Kortaggio" target="_blank">Follow me on Twitter</a>
     <a class="sharebuttons" href="http://tinyletter.com/Kortaggio" target="_blank">Sign up for monthly lifehacks</a>
+    <p>Facebook is not a popularity contest. When you share something, share it because you care about your friends, and not because you just want to have the most number of likes on your post. Hiding the likes and shares on posts, comments, and news feed items lets you have a meaningful conversation instead.</p>
     <p>Questions, suggestions, or bug reports? <a href="http://www.kortaggio.com/contact" target="_blank">Contact me.</a></p>
-    
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script> <!-- Is there a way to avoid duplicate loading of the jQuery library? It's already loaded from the manifest -->
+    <script type="text/javascript" src="js/formsaved.js"></script>
 </body>
 </html>
