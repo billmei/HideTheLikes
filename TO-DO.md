@@ -1,10 +1,12 @@
-Last updated Feb 16, 2013
+Last updated Feb 17, 2013
 
-[ ] Hide notifications
+[ ] Make hiding notifications an option for the user
+[ ] Filter the toast notifications to stop hiding non-like notifications
 [ ] Port the extension over to Firefox
 
 Completed 
 
+[x] Hide notifications - Feb 17, 2013
 [x] Hide likes on page posts and event posts - Feb 16, 2013
 [x] Fixed bug where the likes would appear for a fraction of a second before disappearing - Feb 16, 2013
 [x] Port the extension over to Safari - Feb 06, 2013
