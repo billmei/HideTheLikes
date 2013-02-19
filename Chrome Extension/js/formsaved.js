@@ -1,22 +1,42 @@
 (function(){
 
-var userStorage = chrome.storage.local;
 var $traySetting = $("#traySetting");
 var $toastSetting = $("#toastSetting");
 var $traySaved = $("#traySaved");
 var $toastSaved = $("#toastSaved");
-var defaultSetting = true;
 
-loadSavedOptions();
+// Loads the user's previous settings
+chrome.extension.sendMessage({setting: "ping", node: "traySetting"}, function(response){
+    if (response.checkState) {
+        document.getElementById("traySetting").checked = true;
+    } else if (!response.checkState) {
+        document.getElementById("traySetting").checked = false;
+    } else {
+        console.log("Failed to load default option for Tray Settings");
+    }
+});
 
+// Ditto.
+chrome.extension.sendMessage({setting: "ping", node: "toastSetting"}, function(response){
+    if (response.checkState) {
+        document.getElementById("toastSetting").checked = true;
+    } else if (!response.checkState) {
+        document.getElementById("toastSetting").checked = false;
+    } else {
+        console.log("Failed to load default option for Toast Settings");
+    }
+});
+
+// Click listener to activate saving function
 $traySetting.on("click",function(){
-    saveThis("traySetting",$traySaved);
+    saveThis("tray", "traySetting", $traySaved);
 });
 
 $toastSetting.on("click",function(){
-    saveThis("toastSetting",$toastSaved);
+    saveThis("toast", "toastSetting", $toastSaved);
 });
 
+// Creates a green UI popup after the user checks a checkbox
 function showConfirmation (DOMobject) {
     DOMobject.animate({
         opacity: 0.99
@@ -27,51 +47,18 @@ function showConfirmation (DOMobject) {
     });
 };
 
-// function saveThis (idOfNode, DOMobject) {
-//     var checkedOrNot = document.getElementById(idOfNode).checked;
-//     storage.set({idOfNode: checkedOrNot}, function(){
-//         showConfirmation(DOMobject)
-//     });
-//     console.log(storage.get(idOfNode,function(){}));
-// };
-
-// tracks changes in user storage
-chrome.storage.onChanged.addListener(function(changes, namespace) {
-  for (key in changes) {
-    var storageChange = changes[key];
-    console.log('Storage key "%s" in namespace "%s" changed. ' +
-                'Old value was "%s", new value is "%s".',
-                key,
-                namespace,
-                storageChange.oldValue,
-                storageChange.newValue);
-  }
-});
-
-function saveThis (idOfNode, DOMobject) {
+function saveThis (optionName, idOfNode, DOMobject) {
     var checkedOrNot = document.getElementById(idOfNode).checked;
-    chrome.storage.local.set({idOfNode: checkedOrNot}, function(){
-        showConfirmation(DOMobject)
+    // Pass the settings over to the background page
+    chrome.extension.sendMessage({setting: checkedOrNot, node: idOfNode}, function(response){
+        if (response.checkState === "true" || response.checkState === "false") {
+            showConfirmation(DOMobject);
+        } else {
+            showConfirmation($("#" + optionName + "Error"));
+        }
     });
-    console.log(userStorage.get(idOfNode,function(items){}));
 };
 
-function loadSavedOptions () {
-    var trayStorage = userStorage.get({"traySetting": true},function(){});
-    var toastStorage = userStorage.get({"traySetting": true},function(){});
-    // Load defaults if user has not set an option
-    console.log(trayStorage);
-    if (!trayStorage || !toastStorage) {
-        userStorage.set({"traySetting": true}, function(){});
-        userStorage.set({"toastSetting": true}, function(){});
-        trayStorage = true;
-        toastStorage = true;
-        console.log("iffed!");
-    }
-    console.log(trayStorage);
-    console.log(userStorage.get("traySetting",function(){}));
-    document.getElementById(traySetting).checked = trayStorage;
-    document.getElementById(toastSetting).checked = toastStorage;
-};
+
 
 }());

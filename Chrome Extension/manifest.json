@@ -20,7 +20,7 @@
     } ],
 
     "permissions" : [
-      "storage"
+      "cookies"
     ],
 
     "homepage_url" : "http://www.kortaggio.com/",

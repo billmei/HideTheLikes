@@ -73,7 +73,6 @@ function hideTimelineLikes () {
     $(".sx_2b72b2").next().addClass("hider");
     $("img[src*='https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif']").next().addClass("hider");
     $(".UFIShareIcon").parent().parent().parent().addClass("hider");
-    return;
 };
 
 function hideNewsFeedLikes () {
@@ -81,17 +80,15 @@ function hideNewsFeedLikes () {
     $(".UFIBlingBoxLikeIcon").parent().addClass("hider");
     $(".UFIBlingBoxReshareIcon").parent().addClass("hider");
     $(".UFIShareLink").closest(".UFIRow").addClass("hider");
-    return;
 };
 
 function hideToastNotifications () {
     $("._2a9").addClass("hider"); // I have to figure out how to change this to discern between notifications for "likes" and notifications for other things like event invites and comments. Both the like icon as well as the notification toast div uses "._2a9" as its class.
-    return;
 };
 
 function hideTrayNotifications () {
+    chrome.extension.sendMessage
     $(".sp_923wwp.sx_c8a87a").closest("li.notification").addClass("hider");
-    return;
 };
 
 }());

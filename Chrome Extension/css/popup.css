@@ -35,7 +35,7 @@ h2 {
     padding: 0 7px;
 }
 
-.savedconfirmation {
+.savedconfirmation, .errorsaving {
     display: inline;
     opacity: 0;
     width: auto;
@@ -46,10 +46,18 @@ h2 {
     font-size: 9px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #EBEBEB;
-    background-color: #008500;
     line-height:15px;
     border-radius: 4px;
+    color: #EBEBEB;
+}
+
+.savedconfirmation {
+    background-color: #008500;
+}
+
+.errorsaving {
+    background-color: #A60000;
+    margin-left: -30px;
 }
 
 p {
