@@ -5,9 +5,17 @@
 </head>
 <body>
     <h1>Options</h1>
-    <form class="options">
-        <span class="optionrow" ><input class="checkboxes" type="checkbox" name="traySetting" value="" checked="checked" id="traySetting"><label class="checkboxlabels" for="traySetting">Hide notifications for likes</label></span><span class="savedconfirmation"></span>
-        <span class="optionrow" ><input class="checkboxes" type="checkbox" name="toastSetting" value="" checked="checked" id="toastSetting"><label class="checkboxlabels" for="toastSetting">Hide popup notifications</label></span><span class="savedconfirmation"></span>
+    <form name="options" id="options">
+        <span class="optionrow" >
+            <input class="checkboxes" type="checkbox" name="traySetting" id="traySetting">
+            <label class="checkboxlabels" for="traySetting">Hide notifications for likes</label>
+            <span class="savedconfirmation" id="traySaved">Saved!</span>
+        </span>
+        <span class="optionrow" >
+            <input class="checkboxes" type="checkbox" name="toastSetting" id="toastSetting">
+            <label class="checkboxlabels" for="toastSetting">Also hide all intrusive popup notifications</label>
+            <span class="savedconfirmation" id="toastSaved">Saved!</span>
+        </span>
     </form>
     <h2>Enjoyed this extension?</h2>
     <a class="sharebuttons" href="http://github.com/Kortaggio/HideTheLikes" target="_blank">Fork me on Github</a>

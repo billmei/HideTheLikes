@@ -6,3 +6,6 @@ chrome.tabs.onUpdated.addListener(function(id, info) {
     }
 });
 
+// chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
+//     console.log()
+// })

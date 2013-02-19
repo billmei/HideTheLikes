@@ -6,17 +6,17 @@ h1 {
     font-family: Helvetica,Arial,sans-serif;
     text-shadow: 0 1px 1px #333;
     text-align: left;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 h2 {
     font-family: Helvetica,Arial,sans-serif;
     text-shadow: 0 1px 1px #333;
     text-align: center;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
-.options {
+#options {
     font-family: Georgia,serif;
     text-align: left;
 }
@@ -26,40 +26,46 @@ h2 {
     padding: 5px 10px;
 }
 
-.savedconfirmation {
-    float: right;
-}
-
-.saved {
-    width: 50px;
-    height: 10px;
-    color: #00FF00;
-    background-color: #00FF00;
-}
-
-.checkboxes {
+.checkboxes, .checkboxlabels {
     vertical-align: middle;
+    display: inline;
 }
 
 .checkboxlabels {
-    padding: 0px 7px;
-    vertical-align: middle;
+    padding: 0 7px;
+}
+
+.savedconfirmation {
+    display: inline;
+    opacity: 0;
+    width: auto;
+    height: 14px;
+    padding: 2px 6px;
+    margin-right: 10px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #EBEBEB;
+    background-color: #008500;
+    line-height:15px;
+    border-radius: 4px;
 }
 
 p {
     font-family: Georgia,serif;
     line-height: 140%;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 a {
-    color: #1240ab;
+    color: #1240AB;
 }
 
 .sharebuttons {
     display: block;
     text-align: center;
     font-family: Helvetica,Arial,sans-serif;
-    color: #1240ab;
+    color: #1240AB;
     padding: 8px;
 }
