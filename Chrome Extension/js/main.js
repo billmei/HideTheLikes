@@ -4,13 +4,10 @@ $(document).ready(function(){
 // Run it once the first time on page load
 if ($('#timeline_tab_content').length > 0) {
     hideTimelineLikes();
-    hideTrayNotifications();
 } else if ($('#pagelet_home_stream').length > 0) {
     hideNewsFeedLikes();
-    hideTrayNotifications();
 } else {
     hideTimelineLikes();
-    hideTrayNotifications();
 };
 
 //Facebook pulls data in via scripts so we need to re-check if the user has navigated to a new page every second.
@@ -18,18 +15,13 @@ window.setInterval(function(){
     if ($('#timeline_tab_content').length > 0) {
         hideTimelineLikes();
         pageListener(hideTimelineLikes,'timeline_tab_content');
-        hideTrayNotifications();
-        notificationToastListener();
-        notificationTrayListener();
+        pageListener(hideTrayNotifications,'fbNotificationsList');
     } else if ($('#pagelet_home_stream').length > 0) {
         hideNewsFeedLikes();
         pageListener(hideNewsFeedLikes,'pagelet_home_stream');
-        hideTrayNotifications();
-        notificationToastListener();
-        notificationTrayListener();
+        pageListener(hideTrayNotifications,'fbNotificationsList');
     } else {
         hideTimelineLikes();
-        hideTrayNotifications();
     }
 },1000);
 });
@@ -48,22 +40,6 @@ function pageListener (pageToHide, idOfDOMNode) {
             window.HideTheLikes_lastFunctionRun = new Date();
         }
         window.setTimeout(function(){window.HideTheLikes_timeRightNow = new Date();},delayInterval);
-    });
-};
-
-function notificationToastListener () {
-    // Listener for the popup 'toasts' on the bottom-righthand corner of Facebook
-    var toaster = document.getElementById('u_0_2l'); // u_0_2l is the container within which toasts appear.
-    toaster.addEventListener('DOMNodeInserted',function() {
-        hideToastNotifications();
-    });
-};
-
-function notificationTrayListener () {
-    // Listener for new notification items in the notification tray (the thing you get after clicking on the globe icon)
-    var tray = document.getElementById('fbNotificationsList');
-    tray.addEventListener('DOMNodeInserted',function() {
-        hideTrayNotifications();
     });
 };
 
@@ -90,15 +66,7 @@ function hideToastNotifications () {
 
 function hideTrayNotifications () {
     // chrome.extension.sendMessage
-    console.log($('li.notification').attr('data'));
-    // var data_gt = JSON.parse($('li.notification').attr('data-gt'), function (key, v) {
-    //     if (key === 'notif_type' && v === 'like') {
-    //         return v;
-    //     } else {
-    //         return;
-    //     }
-    // })
-    // console.log(data_gt);
+    console.log($('li.notification').attr('data-gt'));
     // $('.sp_923wwp .sx_c8a87a .sp_45ezie').closest('li.notification').addClass('hider');
 };
 

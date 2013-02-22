@@ -9,6 +9,12 @@
 }
 /* class 'sx_2b72b2' is the like image on a Page post */
 
+/* class '-cx-PRIVATE-notificationBeeper__list' is the ul that contains all incoming notification toasts*/
+.-cx-PRIVATE-notificationBeeper__list {
+    display: none !important;
+    font-size: 0 !important;
+}
+
 /* Prevents the image of a share button from loading */
 img[src*='//fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif'] {
     display: none !important;
