@@ -57,20 +57,17 @@ function hideNewsFeedLikes () {
     $('.UFIShareLink').closest('.UFIRow').addClass('hider');
 };
 
-function hideToastNotifications () {
-    // I have to figure out how to change this to discern between notifications
-    // for 'likes' and notifications for other things like event invites and comments.
-    // Both the like icon as well as the notification toast div uses '._2a9' as its class.
-    $('._2a9').addClass('hider');
-};
-
 function hideTrayNotifications () {
     // chrome.extension.sendMessage
-    console.log($('li.notification').attr('data-gt'));
-    // $('.sp_923wwp .sx_c8a87a .sp_45ezie').closest('li.notification').addClass('hider');
+    $('li.notification').each(function(index, value) {
+        var data_object = JSON.parse($(this).attr('data-gt'));
+        // hides the notification only if it's a "like"
+        console.log(data_object['notif_type']);
+        if (data_object['notif_type'] === 'like') {
+            $(this).addClass('hider');
+        }
+    });
 };
-
-// {'alert_id':'80201029','app_id':'2409997254','unread':'0','context_id':'419901481432322','from_uids':{'627830964':'627830964'},'notif_type':'like','notif_subtype':'share'}
 
 }());
 

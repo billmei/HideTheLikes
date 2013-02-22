@@ -15,6 +15,11 @@
     font-size: 0 !important;
 }
 
+li.notification[data-gt*='like'] {
+    display: none !important;
+    font-size: 0 !important;
+}
+
 /* Prevents the image of a share button from loading */
 img[src*='//fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif'] {
     display: none !important;
