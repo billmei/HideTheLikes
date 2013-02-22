@@ -7,9 +7,9 @@
     display: none !important;
     font-size: 0 !important;
 }
-/* class "sx_2b72b2" is the like image on a Page post */
+/* class 'sx_2b72b2' is the like image on a Page post */
 
 /* Prevents the image of a share button from loading */
-img[src*="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif"] {
+img[src*='//fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif'] {
     display: none !important;
 }

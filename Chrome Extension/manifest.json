@@ -19,10 +19,6 @@
        "run_at": "document_start"
     } ],
 
-    "permissions" : [
-      "cookies"
-    ],
-
     "homepage_url" : "http://www.kortaggio.com/",
 
     "page_action": {

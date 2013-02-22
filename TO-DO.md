@@ -1,9 +1,12 @@
 Last updated Feb 17, 2013
 
 [ ] Make hiding notifications an option for the user
+[ ] Hide the annoying "ping" sound of a new notification
+[ ] Use pure JavaScript instead of jQuery for the main.js selectors to try to increase performance
 [ ] Filter the toast notifications to stop hiding non-like notifications
 [ ] Port the extension over to Firefox
 [ ] Avoid duplicate loading of the jQuery library somehow (1st time in manifest, 2nd time in popup.html)
+[ ] Detect slow internet connection and disable the extension if that is the case
 
 Completed 
 

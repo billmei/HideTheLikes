@@ -1,29 +1,34 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel='stylesheet' type='text/css' href='css/popup.css'>
 </head>
 <body>
     <h1>Options</h1>
-    <form name="options" id="options">
-        <span class="optionrow" >
-            <input class="checkboxes" type="checkbox" name="traySetting" id="traySetting">
-            <label class="checkboxlabels" for="traySetting">Hide notifications for likes</label>
-            <span class="savedconfirmation" id="traySaved">Saved!</span><span class="errorsaving" id="trayError">Can't save :(</span>
+    <form name='options' id='options'>
+        <span class='optionrow' >
+            <input class='checkboxes' type='checkbox' name='traySetting' id='traySetting'>
+            <label class='checkboxlabels' for='traySetting'>Hide notifications for likes</label>
+            <span class='savedconfirmation' id='traySaved'>Saved!</span><span class='errorsaving' id='trayError'>Can't save :(</span>
         </span>
-        <span class="optionrow" >
-            <input class="checkboxes" type="checkbox" name="toastSetting" id="toastSetting">
-            <label class="checkboxlabels" for="toastSetting">Also hide all intrusive popup notifications</label>
-            <span class="savedconfirmation" id="toastSaved">Saved!</span><span class="errorsaving" id="toastError">Can't save :(</span>
+        <span class='optionrow' >
+            <input class='checkboxes' type='checkbox' name='toastSetting' id='toastSetting'>
+            <label class='checkboxlabels' for='toastSetting'>Also hide all intrusive popup notifications</label>
+            <span class='savedconfirmation' id='toastSaved'>Saved!</span><span class='errorsaving' id='toastError'>Can't save :(</span>
+        </span>
+        <span class='optionrow' >
+            <input class='checkboxes' type='checkbox' name='pingSetting' id='pingSetting'>
+            <label class='checkboxlabels' for='pingSetting'>Disable sounds for new notifications</label>
+            <span class='savedconfirmation' id='pingSaved'>Saved!</span><span class='errorsaving' id='pingError'>Can't save :(</span>
         </span>
     </form>
     <h2>Enjoyed this extension?</h2>
-    <a class="sharebuttons" href="http://github.com/Kortaggio/HideTheLikes" target="_blank">Fork me on Github</a>
-    <a class="sharebuttons" href="http://twitter.com/Kortaggio" target="_blank">Follow me on Twitter</a>
-    <a class="sharebuttons" href="http://tinyletter.com/Kortaggio" target="_blank">Sign up for monthly lifehacks</a>
+    <a class='sharebuttons' href='http://github.com/Kortaggio/HideTheLikes' target='_blank'>Fork me on Github</a>
+    <a class='sharebuttons' href='http://twitter.com/Kortaggio' target='_blank'>Follow me on Twitter</a>
+    <a class='sharebuttons' href='http://tinyletter.com/Kortaggio' target='_blank'>Sign up for monthly lifehacks</a>
     <p>Facebook is not a popularity contest. When you share something, share it because you care about your friends, and not because you just want to have the most number of likes on your post. Hiding the likes and shares on posts, comments, and news feed items lets you have a meaningful conversation instead.</p>
-    <p>Questions, suggestions, or bug reports? <a href="http://www.kortaggio.com/contact" target="_blank">Contact me.</a></p>
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script> <!-- Is there a way to avoid duplicate loading of the jQuery library? It's already loaded from the manifest -->
-    <script type="text/javascript" src="js/formsaved.js"></script>
+    <p>Questions, suggestions, or bug reports? <a href='http://www.kortaggio.com/contact' target='_blank'>Contact me.</a></p>
+    <script type='text/javascript' src='js/jquery-1.9.0.min.js'></script> <!-- Is there a way to avoid duplicate loading of the jQuery library? It's already loaded from the manifest -->
+    <script type='text/javascript' src='js/formsaved.js'></script>
 </body>
 </html>
