@@ -15,6 +15,13 @@
     font-size: 0 !important;
 }
 
+/* Toast notifications */
+li[data-gt*='like'] {
+    display: none !important;
+    font-size: 0 !important;
+}
+
+/* Tray notifications */
 li.notification[data-gt*='like'] {
     display: none !important;
     font-size: 0 !important;
