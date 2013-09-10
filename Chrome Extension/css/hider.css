@@ -3,11 +3,21 @@
 .UFICommentLikeButton,
 .fbTimelineFeedbackShares,
 .fbTimelineFeedbackLikes,
+.UFIBlingBoxTimelineLikeIcon,
+.UFIBlingBoxTimelineReshareIcon,
 .sx_2b72b2 {
     display: none !important;
     font-size: 0 !important;
 }
 /* class 'sx_2b72b2' is the like image on a Page post */
+
+/* Sibling selectors */
+
+.UFIBlingBoxTimelineLikeIcon + .UFIBlingBoxText,
+.UFIBlingBoxTimelineReshareIcon + .UFIBlingBoxText {
+	display: none !important;
+    font-size: 0 !important;
+}
 
 /* class '-cx-PRIVATE-notificationBeeper__list' is the ul that contains all incoming notification toasts*/
 .-cx-PRIVATE-notificationBeeper__list {
@@ -21,7 +31,13 @@ li[data-gt*='like'] {
     font-size: 0 !important;
 }
 
-/* Tray notifications */
+/* Likes on photo album/stream, displayed on:hover of a photo */
+div._53z > span._53n {
+	display: none !important;
+	font-size: 0 !important;
+}
+
+/* Flyout notifications */
 li.notification[data-gt*='like'] {
     display: none !important;
     font-size: 0 !important;

@@ -15,11 +15,11 @@ window.setInterval(function(){
     if ($('#timeline_tab_content').length > 0) {
         hideTimelineLikes();
         pageListener(hideTimelineLikes,'timeline_tab_content');
-        pageListener(hideTrayNotifications,'fbNotificationsList');
+        pageListener(hideFlyoutNotifications,'fbNotificationsFlyout');
     } else if ($('#pagelet_home_stream').length > 0) {
         hideNewsFeedLikes();
         pageListener(hideNewsFeedLikes,'pagelet_home_stream');
-        pageListener(hideTrayNotifications,'fbNotificationsList');
+        pageListener(hideFlyoutNotifications,'fbNotificationsFlyout');
     } else {
         hideTimelineLikes();
     }
@@ -57,7 +57,7 @@ function hideNewsFeedLikes () {
     $('.UFIShareLink').closest('.UFIRow').addClass('hider');
 };
 
-function hideTrayNotifications () {
+function hideFlyoutNotifications () {
     // chrome.extension.sendMessage
     $('li.notification').each(function(index, value) {
         var data_object = JSON.parse($(this).attr('data-gt'));
