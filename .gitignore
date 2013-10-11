@@ -1,5 +1,6 @@
 # Compiled source #
 ###################
+*.crx
 *.com
 *.class
 *.dll
