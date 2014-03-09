@@ -31,6 +31,12 @@ li[data-gt*='like'] {
     font-size: 0 !important;
 }
 
+/* Shows up sometimes on UFIBlingBox in the timeline for pages */
+span[data-reactid='.1w.$like'] {
+    display: none !important;
+    font-size: 0 !important;
+}
+
 /* Likes on photo album/stream, displayed on:hover of a photo */
 div._53z > span._53n {
 	display: none !important;
