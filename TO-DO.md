@@ -1,17 +1,6 @@
-Last updated Feb 21, 2013
+Last updated Mar 10, 2014
 
-- [ ] Make hiding notifications an option for the user
-- [ ] Filter the toast notifications to stop hiding non-like notifications
 - [ ] Use pure JavaScript instead of jQuery for the main.js selectors to try to increase performance
 - [ ] Port the extension over to Firefox
 - [ ] Avoid duplicate loading of the jQuery library somehow (1st time in manifest, 2nd time in popup.html)
 - [ ] Detect slow internet connection and disable the extension if that is the case
-
-### Completed 
-
-- [x] Hide the annoying "ping" sound of a new notification - Feb 21, 2013
-- [x] Hide notifications - Feb 17, 2013
-- [x] Hide likes on page posts and event posts - Feb 16, 2013
-- [x] Fixed bug where the likes would appear for a fraction of a second before disappearing - Feb 16, 2013
-- [x] Port the extension over to Safari - Feb 06, 2013
-- [x] Create a large cover photo for the Chrome webstore - Feb 05, 2013
