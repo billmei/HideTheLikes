@@ -12,7 +12,6 @@
 /* class 'sx_2b72b2' is the like image on a Page post */
 
 /* Sibling selectors */
-
 .UFIBlingBoxTimelineLikeIcon + .UFIBlingBoxText,
 .UFIBlingBoxTimelineReshareIcon + .UFIBlingBoxText {
 	display: none !important;
@@ -31,8 +30,8 @@ li[data-gt*='like'] {
     font-size: 0 !important;
 }
 
-/* Shows up sometimes on UFIBlingBox in the timeline for pages */
-span[data-reactid='.1w.$like'] {
+/* Shows up sometimes on UFIBlingBox in the timeline for pages or pinned posts*/
+span[data-reactid$='like'] {
     display: none !important;
     font-size: 0 !important;
 }

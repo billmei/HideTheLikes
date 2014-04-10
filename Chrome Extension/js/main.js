@@ -8,7 +8,7 @@ if ($('#timeline_tab_content').length > 0) {
     hideNewsFeedLikes();
 } else {
     hideTimelineLikes();
-};
+}
 
 //Facebook pulls data in via scripts so we need to re-check if the user has navigated to a new page every second.
 window.setInterval(function(){
@@ -41,33 +41,32 @@ function pageListener (pageToHide, idOfDOMNode) {
         }
         window.setTimeout(function(){window.HideTheLikes_timeRightNow = new Date();},delayInterval);
     });
-};
+}
 
 function hideTimelineLikes () {
     $('.UFICommentLikeButton').prev().addClass('hider');
     $('.sx_2b72b2').next().addClass('hider');
     $('img[src*="//fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif"]').next().addClass('hider');
     $('.UFIShareIcon').parent().parent().parent().addClass('hider');
-};
+}
 
 function hideNewsFeedLikes () {
     $('.UFICommentLikeButton').prev().addClass('hider');
     $('.UFIBlingBoxLikeIcon').parent().addClass('hider');
     $('.UFIBlingBoxReshareIcon').parent().addClass('hider');
     $('.UFIShareLink').closest('.UFIRow').addClass('hider');
-};
+}
 
 function hideFlyoutNotifications () {
     // chrome.extension.sendMessage
     $('li.notification').each(function(index, value) {
         var data_object = JSON.parse($(this).attr('data-gt'));
         // hides the notification only if it's a "like"
-        console.log(data_object['notif_type']);
-        if (data_object['notif_type'] === 'like') {
+        if (data_object.notif_type === 'like') {
             $(this).addClass('hider');
         }
     });
-};
+}
 
 }());
 
