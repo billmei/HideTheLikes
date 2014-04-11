@@ -31,7 +31,8 @@ li[data-gt*='like'] {
 }
 
 /* Shows up sometimes on UFIBlingBox in the timeline for pages or pinned posts*/
-span[data-reactid$='like'] {
+span[data-reactid$='like'],
+span[data-reactid$='reshare'] {
     display: none !important;
     font-size: 0 !important;
 }
