@@ -38,6 +38,9 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
+# Binary files #
+######################
+*.psd
 
 # Chrome Extension Private Keys #
 #################################
