@@ -38,14 +38,13 @@ span[data-reactid$='reshare'] {
 }
 
 /* Likes on photo album/stream, displayed on:hover of a photo */
-div._53z > span._53n,
 div._53z > span._5gm1 {
 	display: none !important;
 	font-size: 0 !important;
 }
 
 /* Flyout notifications */
-li.notification[data-gt*='like'] {
+ul[data-gt*='notifications'] li div a[href$='like'] {
     display: none !important;
     font-size: 0 !important;
 }

@@ -58,13 +58,8 @@ function hideNewsFeedLikes () {
 }
 
 function hideFlyoutNotifications () {
-    // chrome.extension.sendMessage
-    $('li.notification').each(function(index, value) {
-        var data_object = JSON.parse($(this).attr('data-gt'));
-        // hides the notification only if it's a "like"
-        if (data_object.notif_type === 'like') {
-            $(this).addClass('hider');
-        }
+    $('a[id^="notif_flyout_"]').each(function(index, value) {
+        $(this).parent().parent().addClass('hider');
     });
 }
 
