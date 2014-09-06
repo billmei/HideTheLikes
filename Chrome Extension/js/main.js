@@ -57,11 +57,5 @@ function hideNewsFeedLikes () {
     $('.UFIShareLink').closest('.UFIRow').addClass('hider');
 }
 
-function hideFlyoutNotifications () {
-    $('a[id^="notif_flyout_"]').each(function(index, value) {
-        $(this).parent().parent().addClass('hider');
-    });
-}
-
 }());
 
