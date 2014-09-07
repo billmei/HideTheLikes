@@ -24,11 +24,18 @@
     font-size: 0 !important;
 }
 
-/* Toast notifications */
+/* Toast notifications and */
+/* flyout notifications */
 li[data-gt*='like'] {
     display: none !important;
     font-size: 0 !important;
+    border: none !important;
+    height: 0 !important;
 }
+    li[data-gt*='like'] a {
+        display: none !important;
+        font-size: 0 !important;
+    }
 
 /* Shows up sometimes on UFIBlingBox in the timeline for pages or pinned posts*/
 span[data-reactid$='like'],
@@ -41,12 +48,6 @@ span[data-reactid$='reshare'] {
 div._53z > span._5gm1 {
 	display: none !important;
 	font-size: 0 !important;
-}
-
-/* Flyout notifications */
-ul[data-gt*='notifications'] li div a[href$='like'] {
-    display: none !important;
-    font-size: 0 !important;
 }
 
 /* Prevents the image of a share button from loading */

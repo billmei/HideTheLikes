@@ -15,11 +15,9 @@ window.setInterval(function(){
     if ($('#timeline_tab_content').length > 0) {
         hideTimelineLikes();
         pageListener(hideTimelineLikes,'timeline_tab_content');
-        pageListener(hideFlyoutNotifications,'fbNotificationsFlyout');
     } else if ($('#pagelet_home_stream').length > 0) {
         hideNewsFeedLikes();
         pageListener(hideNewsFeedLikes,'pagelet_home_stream');
-        pageListener(hideFlyoutNotifications,'fbNotificationsFlyout');
     } else {
         hideTimelineLikes();
     }
