@@ -1,11 +1,13 @@
 .hider,
 .UFILikeSentence,
+.UFIShareRow,
 .UFICommentLikeButton,
 .fbTimelineFeedbackShares,
 .fbTimelineFeedbackLikes,
 .UFIBlingBoxTimelineLikeIcon,
 .UFIBlingBoxTimelineReshareIcon,
-.sx_2b72b2 {
+.sx_2b72b2,
+span[data-reactid*='likeCount'] {
     display: none !important;
     font-size: 0 !important;
 }
