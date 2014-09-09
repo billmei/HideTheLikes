@@ -47,7 +47,7 @@ span[data-reactid$='reshare'] {
 }
 
 /* Likes on photo album/stream, displayed on:hover of a photo */
-div._53z > span._5gm1 {
+table.uiGrid[aria-label$='likes'] {
 	display: none !important;
 	font-size: 0 !important;
 }

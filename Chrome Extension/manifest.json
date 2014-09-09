@@ -4,7 +4,7 @@
     "name" : "Hide Facebook Post Likes",
     "short_name": "Hide FB Likes",
     "description" : "Life is not a popularity contest. Hides likes and shares on Facebook posts so you can stop comparing yourself to everyone else.",
-    "version" : "2.0.0",
+    "version" : "2.0.1",
 
     "icons" : {
         "16" : "img/thumb16.png",
@@ -19,7 +19,7 @@
        "run_at": "document_start"
     } ],
 
-    "homepage_url" : "http://www.kortaggio.com/",
+    "homepage_url" : "https://billmei.net",
 
     "page_action": {
         "default_icon": "img/icon.png",
