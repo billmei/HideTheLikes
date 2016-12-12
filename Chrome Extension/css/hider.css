@@ -8,51 +8,57 @@
 .UFIBlingBoxTimelineReshareIcon,
 .sx_2b72b2,
 span[data-reactid*='likeCount'] {
-    display: none !important;
-    font-size: 0 !important;
+  display: none !important;
+  font-size: 0 !important;
 }
 /* class 'sx_2b72b2' is the like image on a Page post */
 
 /* Sibling selectors */
 .UFIBlingBoxTimelineLikeIcon + .UFIBlingBoxText,
 .UFIBlingBoxTimelineReshareIcon + .UFIBlingBoxText {
-	display: none !important;
-    font-size: 0 !important;
+  display: none !important;
+  font-size: 0 !important;
 }
 
 /* class '-cx-PRIVATE-notificationBeeper__list' is the ul that contains all incoming notification toasts*/
 .-cx-PRIVATE-notificationBeeper__list {
-    display: none !important;
-    font-size: 0 !important;
+  display: none !important;
+  font-size: 0 !important;
 }
 
 /* Toast notifications and */
 /* flyout notifications */
 li[data-gt*='like'] {
+  display: none !important;
+  font-size: 0 !important;
+  border: none !important;
+  height: 0 !important;
+}
+  li[data-gt*='like'] a {
     display: none !important;
     font-size: 0 !important;
-    border: none !important;
-    height: 0 !important;
-}
-    li[data-gt*='like'] a {
-        display: none !important;
-        font-size: 0 !important;
-    }
+  }
 
 /* Shows up sometimes on UFIBlingBox in the timeline for pages or pinned posts*/
 span[data-reactid$='like'],
 span[data-reactid$='reshare'] {
-    display: none !important;
-    font-size: 0 !important;
+  display: none !important;
+  font-size: 0 !important;
 }
 
 /* Likes on photo album/stream, displayed on:hover of a photo */
 table.uiGrid[aria-label$='likes'] {
-	display: none !important;
-	font-size: 0 !important;
+  display: none !important;
+  font-size: 0 !important;
 }
 
 /* Prevents the image of a share button from loading */
 img[src*='//fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/lkH9Al5GEhV.gif'] {
-    display: none !important;
+  display: none !important;
+}
+
+/* Hide "Reactions" added in 2016: "Love", "Haha", "Wow", "Sad", and "Angry" */
+li[data-gt*=feedback_reaction_generic] {
+  display: none !important;
+  font-size: 0 !important;
 }
