@@ -6,18 +6,15 @@ Facebook is not a popularity contest. When you share something, share it because
 
 ## Installation Instructions
 
-### 1. From the Chrome Web Store (Recommended)
-To install, just download the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/hide-facebook-post-likes/epbnnhamgebfpfopdghjimdgfllbfpak)
+### 1. Binary File
+Go to the releases section and download the latest `crx` file. After you are finished downloading this file (it should be named something like `HideTheLikes.version.number.crx`), drag and drop it into Google Chrome's "extensions" tab. Tested on Chrome version 20+.
 
-### 2. Binary File
-Go to the releases section and download the latest `crx` file. After you are finished downloading this file (it should be named something like `Hide.FB.Post.Likes.version.number.crx`), drag and drop it into Google Chrome's "extensions" tab. Tested on Chrome version 20+. This method is not recommended because the app will not automatically update.
-
-### 3. Compile From Source
+### 2. Compile From Source
 Run
 
-	$ git clone https://github.com/Kortaggio/HideTheLikes.git
+	$ git clone https://github.com/kortaggio/HideTheLikes.git
 
-Open Google Chrome and go to Settings -> Extensions (or go to `chrome://extensions`). Check the box on the top-right to enable Developer Mode. In the toolbar that appears, click on Load Unpacked Extension then select the folder `HideTheLikes/Chrome Extension/`. This method is not recommended because the app will not automatically update.
+Open Google Chrome and go to Settings -> Extensions (or go to `chrome://extensions`). Check the box on the top-right to enable Developer Mode. In the toolbar that appears, click on Load Unpacked Extension then select the folder `HideTheLikes/Chrome Extension/`.
 
 ## License
 MIT License.
