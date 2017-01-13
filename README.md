@@ -6,10 +6,15 @@ Facebook is not a popularity contest. When you share something, share it because
 
 ## Installation Instructions
 
-### 1. Binary File
+### 1. Direct Download
+[Click Here](https://github.com/kortaggio/HideTheLikes/releases/download/v2.1.0/HideTheLikes.2.1.0.crx) for a link to version 2.1.0
+
+Drag and drop the downloaded `.crx` file into Google Chrome's "extensions" tab.
+
+### 2. Binary File
 Go to the releases section and download the latest `crx` file. After you are finished downloading this file (it should be named something like `HideTheLikes.version.number.crx`), drag and drop it into Google Chrome's "extensions" tab. Tested on Chrome version 20+.
 
-### 2. Compile From Source
+### 3. Compile From Source
 Run
 
 	$ git clone https://github.com/kortaggio/HideTheLikes.git
