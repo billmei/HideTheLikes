@@ -7,7 +7,7 @@ Facebook is not a popularity contest. When you share something, share it because
 ## Installation Instructions
 
 ### 1. Direct Download
-[Click Here](https://github.com/kortaggio/HideTheLikes/releases/download/v2.1.0/HideTheLikes.2.1.0.crx) for a link to version 2.1.0
+[Click Here](https://github.com/billmei/HideTheLikes/releases/download/v2.1.0/HideTheLikes.2.1.0.crx) for a link to version 2.1.0
 
 Drag and drop the downloaded `.crx` file into Google Chrome's "extensions" tab.
 
@@ -17,7 +17,7 @@ Go to the releases section and download the latest `crx` file. After you are fin
 ### 3. Compile From Source
 Run
 
-	$ git clone https://github.com/kortaggio/HideTheLikes.git
+	$ git clone https://github.com/billmei/HideTheLikes.git
 
 Open Google Chrome and go to Settings -> Extensions (or go to `chrome://extensions`). Check the box on the top-right to enable Developer Mode. In the toolbar that appears, click on Load Unpacked Extension then select the folder `HideTheLikes/Chrome Extension/`.
 
